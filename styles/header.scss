@@ -1,0 +1,10 @@
+@import url(./resetAll.css);
+$amarillo: #ffe800;
+.header {
+  width: 100%;
+  height: 79px;
+  background-color: $amarillo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,183 @@
+@import url(fuentes.css);
+@import url(resetAll.css);
+.eventos {
+  width: 100%;
+  background: #0f0d0e;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eventos .titulo {
+  width: 262px;
+  height: 41px;
+  text-align: left;
+  border: 1px solid #24ced8;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 4px #24ced8;
+          box-shadow: 2px 2px 4px #24ced8;
+  padding: 0 11px;
+  margin: auto;
+  margin-bottom: 14px;
+  background-color: none;
+}
+
+.eventos .titulo p {
+  font-family: "Poppins";
+  font-size: 20px;
+  display: inline;
+  color: #fff;
+}
+
+.eventos .titulo p span {
+  background: -webkit-gradient(linear, left top, right top, from(#24c9d3), to(#2780d2));
+  background: linear-gradient(to right, #24c9d3 0%, #2780d2 100%);
+}
+
+.eventos .conectate p {
+  font-family: "Poppins";
+  font-size: 15px;
+  display: inline;
+  color: #fff;
+}
+
+.eventos .conectate p a {
+  font-weight: normal;
+  display: inline-block;
+  height: 22px;
+  width: 67px;
+  text-align: center;
+  color: #ffe800;
+  border-radius: 50px;
+  border: 1px solid #ffe800;
+  text-decoration: none;
+}
+
+.proxEventos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.proxEventos .tarjeta {
+  height: 254px;
+  width: 176px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+}
+
+.proxEventos .tarjeta .tema {
+  height: 176px;
+  border-radius: 200px;
+  border: 1px solid #24ced8;
+  -webkit-box-shadow: 0px 2px 5px rgba(36, 206, 216, 0.5);
+          box-shadow: 0px 2px 5px rgba(36, 206, 216, 0.5);
+  overflow: hidden;
+}
+
+.proxEventos .tarjeta .tema .imagen {
+  width: 100%;
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#24c9d3), to(#2780d2));
+  background: linear-gradient(to right, #24c9d3 0%, #2780d2 100%);
+}
+
+.proxEventos .tarjeta .tema .fecha {
+  width: 100%;
+  height: 35%;
+  background: #ffe800;
+  padding: 4px 0px;
+}
+
+.proxEventos .tarjeta .tema .fecha div {
+  width: 60%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.proxEventos .tarjeta .tema .fecha div .linea {
+  height: 40px;
+  width: 0;
+  border-right: 1px solid #000;
+  margin: 5px;
+}
+
+.proxEventos .tarjeta .tema .fecha div p {
+  font-family: "Poppins";
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+}
+
+.proxEventos .tarjeta .descripcion {
+  width: 100%;
+  height: 66px;
+  border: 1px solid #ffe800;
+  border-radius: 13px;
+  -webkit-box-shadow: 0 2px 5px rgba(255, 232, 0, 0.5);
+          box-shadow: 0 2px 5px rgba(255, 232, 0, 0.5);
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.proxEventos .tarjeta .descripcion p {
+  font-family: "Poppins", "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffe800;
+}
+
+.proxEventos .tarjeta .descripcion p strong {
+  display: inline-block;
+  background: #2780d2;
+  font-weight: normal;
+  border-radius: 10px;
+  padding: 0 2px;
+}
+
+.proxEventos .tarjeta .descripcion p span {
+  color: #fff;
+}
+/*# sourceMappingURL=eventos.css.map */

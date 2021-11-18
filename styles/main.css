@@ -1,0 +1,13 @@
+@import url(slider.css);
+@import url(info.css);
+@import url(marcas.css);
+@import url(productos.css);
+@import url(tip.css);
+@import url(suscribete.css);
+@import url(eventos.css);
+@import url(lives.css);
+.main {
+  max-width: 2000px;
+  margin: auto;
+}
+/*# sourceMappingURL=main.css.map */

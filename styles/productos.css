@@ -1,0 +1,548 @@
+@import url(resetAll.css);
+@import url(fuentes.css);
+.productos {
+  background: #0f0d0e;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 25px;
+}
+
+.azul {
+  background: -webkit-gradient(linear, left top, right top, from(#24c9d3), to(#2780d2));
+  background: linear-gradient(to right, #24c9d3 0%, #2780d2 100%);
+  border: #24ced8 1px solid;
+  -webkit-box-shadow: 2px 2px 5px rgba(20, 207, 199, 0.9);
+          box-shadow: 2px 2px 5px rgba(20, 207, 199, 0.9);
+}
+
+.blanco {
+  background: #fff;
+}
+
+.negroGris {
+  background: #0f0d0e;
+}
+
+.violeta {
+  background: -webkit-gradient(linear, left top, right top, from(#dd337c), color-stop(10%, #cd2d7d), color-stop(30%, #b72580), color-stop(50%, #b72580), color-stop(75%, #9e1c82), to(#9c1b83));
+  background: linear-gradient(to right, #dd337c 0%, #cd2d7d 10%, #b72580 30%, #b72580 50%, #9e1c82 75%, #9c1b83 100%);
+  border: #dd337c 1px solid;
+  -webkit-box-shadow: 2px 2px 5px rgba(123, 16, 103, 0.9);
+          box-shadow: 2px 2px 5px rgba(123, 16, 103, 0.9);
+}
+
+.estiloUno {
+  height: 405px;
+  width: 282px;
+  border-radius: 25px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.estiloUno .fondo {
+  height: 382px;
+  width: 100%;
+  border-radius: inherit;
+  position: relative;
+  top: 0;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.estiloUno .fondo .imagen {
+  height: 70%;
+  width: 100%;
+  border-radius: inherit;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.estiloUno .fondo .descripcion {
+  padding: 8px;
+  width: 100%;
+  height: 20%;
+}
+
+.estiloUno .fondo .descripcion p {
+  font-family: "Poppins";
+  color: white;
+  text-align: center;
+  font-size: 9px;
+}
+
+.estiloUno .fondo .descripcion .titulo {
+  font-family: "Galano Grotesque";
+  font-size: 14px;
+  line-height: 14px;
+  margin: 4px;
+}
+
+.estiloUno .fondo .descripcion .precio {
+  font-size: 12px;
+}
+
+.estiloUno .boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  width: 170px;
+  min-height: 45px;
+  background: #ffe833;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  border: none;
+}
+
+.estiloUno .boton:before {
+  content: "";
+  border-radius: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.estiloUno .boton:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+.estiloDos {
+  width: 470px;
+  height: 288px;
+  border-radius: 25px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.estiloDos .fondo {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.estiloDos .fondo .imagen {
+  height: 100%;
+  border-radius: inherit;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 50%;
+  background: #0f0d0e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.estiloDos .fondo .imagen img {
+  height: 90%;
+}
+
+.estiloDos .fondo .descripcion {
+  height: 100%;
+  width: 50%;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.estiloDos .fondo .descripcion p {
+  font-family: "Poppins";
+  color: white;
+  text-align: center;
+  font-size: 9px;
+}
+
+.estiloDos .fondo .descripcion .titulo {
+  font-family: "Galano Grotesque";
+  font-size: 14px;
+  line-height: 14px;
+  margin: 1px;
+}
+
+.estiloDos .fondo .descripcion .titulo img {
+  height: 170px;
+  margin: auto;
+}
+
+.estiloDos .fondo .descripcion .precio {
+  font-size: 12px;
+  width: 100%;
+  background: #fff;
+  color: #000;
+}
+
+.estiloDos .boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  width: 170px;
+  min-height: 45px;
+  min-width: 170px;
+  background: #ffe833;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  position: relative;
+  left: -45px;
+  bottom: 23px;
+  border: none;
+}
+
+.estiloDos .boton:before {
+  content: "";
+  border-radius: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.estiloDos .boton:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+.estiloTres {
+  height: 290px;
+  width: 549px;
+  border-radius: 25px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.estiloTres .fondo {
+  height: 264px;
+  width: 100%;
+  border-radius: inherit;
+  position: relative;
+  top: 0;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.estiloTres .fondo .imagen {
+  height: 70%;
+  width: 100%;
+  border-radius: inherit;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.estiloTres .fondo .descripcion {
+  padding: 8px;
+  width: 100%;
+  height: 20%;
+}
+
+.estiloTres .fondo .descripcion p {
+  font-family: "Poppins";
+  color: white;
+  text-align: center;
+  font-size: 9px;
+}
+
+.estiloTres .fondo .descripcion .titulo {
+  font-family: "Galano Grotesque";
+  font-size: 14px;
+  line-height: 14px;
+  margin: 2px;
+}
+
+.estiloTres .fondo .descripcion .precio {
+  font-size: 12px;
+}
+
+.estiloTres .boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  width: 170px;
+  min-height: 45px;
+  background: #ffe833;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  border: none;
+}
+
+.estiloTres .boton:before {
+  content: "";
+  border-radius: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.estiloTres .boton:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+.estiloCuatro {
+  height: 230px;
+  width: 549px;
+  border-radius: 25px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.estiloCuatro .fondo {
+  height: 203px;
+  width: 100%;
+  border-radius: inherit;
+  position: relative;
+  top: 0;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.estiloCuatro .fondo .imagen {
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.estiloCuatro .fondo .descripcion {
+  padding: 8px;
+  width: 50%;
+  height: 100%;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.estiloCuatro .fondo .descripcion p {
+  font-family: "Poppins";
+  color: white;
+  text-align: center;
+  font-size: 9px;
+}
+
+.estiloCuatro .fondo .descripcion .titulo {
+  font-family: "Galano Grotesque";
+  font-size: 14px;
+  line-height: 14px;
+  margin: 2px;
+}
+
+.estiloCuatro .fondo .descripcion .precio {
+  font-size: 12px;
+}
+
+.estiloCuatro .boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  width: 170px;
+  min-height: 45px;
+  background: #ffe833;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  border: none;
+}
+
+.estiloCuatro .boton:before {
+  content: "";
+  border-radius: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.estiloCuatro .boton:hover:before {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=productos.css.map */

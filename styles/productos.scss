@@ -1,0 +1,403 @@
+@import url(resetAll.css);
+@import url(fuentes.css);
+$negro-gris: #0f0d0e;
+$amarillo: #ffe833;
+$negro: #000;
+.productos {
+  background: $negro-gris;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+}
+
+.azul {
+  background: linear-gradient(to right, #24c9d3 0%, #2780d2 100%);
+  border: #24ced8 1px solid;
+  box-shadow: 2px 2px 5px rgba(20, 207, 199, 0.9);
+}
+
+.blanco {
+  background: #fff;
+}
+
+.negroGris {
+  background: $negro-gris;
+}
+.violeta {
+  background: linear-gradient(
+    to right,
+    #dd337c 0%,
+    #cd2d7d 10%,
+    #b72580 30%,
+    #b72580 50%,
+    #9e1c82 75%,
+    #9c1b83 100%
+  );
+  border: #dd337c 1px solid;
+  box-shadow: 2px 2px 5px rgba(123, 16, 103, 0.9);
+}
+
+.estiloUno {
+  height: 405px;
+  width: 282px;
+  border-radius: 25px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .fondo {
+    height: 382px;
+    width: 100%;
+    border-radius: inherit;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    .imagen {
+      height: 70%;
+      width: 100%;
+      border-radius: inherit;
+      // background: $negro-gris;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .descripcion {
+      padding: 8px;
+      width: 100%;
+      height: 20%;
+      p {
+        font-family: "Poppins";
+        color: white;
+        text-align: center;
+        font-size: 9px;
+      }
+      .titulo {
+        font-family: "Galano Grotesque";
+        font-size: 14px;
+        line-height: 14px;
+        margin: 4px;
+      }
+      .precio {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .boton {
+    display: flex;
+    height: 45px;
+    width: 170px;
+    min-height: 45px;
+    background: $amarillo;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    color: $negro;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    border: none;
+  }
+  .boton:before {
+    content: "";
+    border-radius: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+  }
+  .boton:hover:before {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.estiloDos {
+  width: 470px;
+  height: 288px;
+  border-radius: 25px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  .fondo {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    .imagen {
+      height: 100%;
+      border-radius: inherit;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      width: 50%;
+      background: $negro-gris;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 90%;
+      }
+    }
+    .descripcion {
+      height: 100%;
+      width: 50%;
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      p {
+        font-family: "Poppins";
+        color: white;
+        text-align: center;
+        font-size: 9px;
+      }
+      .titulo {
+        font-family: "Galano Grotesque";
+        font-size: 14px;
+        line-height: 14px;
+        margin: 1px;
+        img {
+          height: 170px;
+          margin: auto;
+        }
+      }
+      .precio {
+        font-size: 12px;
+        width: 100%;
+        background: #fff;
+        color: #000;
+      }
+    }
+  }
+
+  .boton {
+    display: flex;
+    height: 45px;
+    width: 170px;
+    min-height: 45px;
+    min-width: 170px;
+    background: $amarillo;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    color: $negro;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    left: -45px;
+    bottom: 23px;
+    border: none;
+  }
+  .boton:before {
+    content: "";
+    border-radius: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+  }
+  .boton:hover:before {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.estiloTres {
+  height: 290px;
+  width: 549px;
+  border-radius: 25px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .fondo {
+    height: 264px;
+    width: 100%;
+    border-radius: inherit;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    .imagen {
+      height: 70%;
+      width: 100%;
+      border-radius: inherit;
+      // background: $negro-gris;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .descripcion {
+      padding: 8px;
+      width: 100%;
+      height: 20%;
+      p {
+        font-family: "Poppins";
+        color: white;
+        text-align: center;
+        font-size: 9px;
+      }
+      .titulo {
+        font-family: "Galano Grotesque";
+        font-size: 14px;
+        line-height: 14px;
+        margin: 2px;
+      }
+      .precio {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .boton {
+    display: flex;
+    height: 45px;
+    width: 170px;
+    min-height: 45px;
+    background: $amarillo;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    color: $negro;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    border: none;
+  }
+  .boton:before {
+    content: "";
+    border-radius: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+  }
+  .boton:hover:before {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.estiloCuatro {
+  height: 230px;
+  width: 549px;
+  border-radius: 25px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .fondo {
+    height: 203px;
+    width: 100%;
+    border-radius: inherit;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    .imagen {
+      height: 100%;
+      width: 50%;
+      border-radius: inherit;
+      // background: $negro-gris;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      order: 1;
+    }
+    .descripcion {
+      padding: 8px;
+      width: 50%;
+      height: 100%;
+      order: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        font-family: "Poppins";
+        color: white;
+        text-align: center;
+        font-size: 9px;
+      }
+      .titulo {
+        font-family: "Galano Grotesque";
+        font-size: 14px;
+        line-height: 14px;
+        margin: 2px;
+      }
+      .precio {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .boton {
+    display: flex;
+    height: 45px;
+    width: 170px;
+    min-height: 45px;
+    background: $amarillo;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    color: $negro;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    border: none;
+  }
+  .boton:before {
+    content: "";
+    border-radius: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+  }
+  .boton:hover:before {
+    width: 100%;
+    height: 100%;
+  }
+}

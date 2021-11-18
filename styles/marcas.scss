@@ -1,0 +1,95 @@
+@import url(fuentes.css);
+@import url(resetAll.css);
+$amarillo: #ffe800;
+$blanco: #fff;
+$negro: #000;
+$negro-gris: #0f0d0e;
+.marcas {
+  width: 100%;
+  background-color: $negro-gris;
+  padding: 20px 25px;
+  position: relative;
+  z-index: 12;
+  .mas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    .linea {
+      border-top: 1px solid $blanco;
+      height: 2px;
+      width: 100px;
+      max-width: 320px;
+      min-width: 100px;
+      margin: 0 33px;
+    }
+    p {
+      font-family: "Poppins";
+      font-size: 20px;
+      color: $blanco;
+    }
+  }
+  .titulo {
+    width: 378px;
+    height: 41px;
+    text-align: left;
+    border: 1px solid #24ced8;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px #24ced8;
+    padding: 0 11px;
+    margin: auto;
+
+    background-color: none;
+
+    p {
+      font-family: "Poppins";
+      font-size: 20px;
+      display: inline;
+      color: $blanco;
+
+      span {
+        background: linear-gradient(to right, #24c9d3 0%, #2780d2 100%);
+      }
+    }
+  }
+  .logos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 23px;
+    flex-wrap: wrap;
+    .empresas {
+      display: flex;
+      max-width: 1000px;
+      width: 100%;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .lineas {
+      width: 100%;
+      height: 41px;
+      border: 1px solid #24ced8;
+      border-right: none;
+      border-left: none;
+      box-shadow: 1px 1px 2px #24ced8;
+      position: absolute;
+      z-index: -11;
+      align-self: center;
+    }
+
+    .circulo {
+      margin: 4px;
+      display: flex;
+      height: 76px;
+      width: 76px;
+      background: $blanco;
+      border-radius: 100%;
+      border: 1px solid #00ffce;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+    }
+    .circulo:hover {
+      background: rgba(210, 210, 210, 1);
+    }
+  }
+}

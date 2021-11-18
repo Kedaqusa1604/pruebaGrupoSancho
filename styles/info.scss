@@ -1,0 +1,19 @@
+@import url(resetAll.css);
+@import url(fuentes.css);
+$negro: #000;
+.info {
+  width: 100%;
+  height: fit-content;
+  background: $negro;
+  .canales {
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 9px 45px;
+    flex-wrap: wrap;
+  }
+}
